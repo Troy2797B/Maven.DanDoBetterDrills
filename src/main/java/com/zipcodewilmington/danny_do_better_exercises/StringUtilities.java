@@ -3,7 +3,8 @@ package com.zipcodewilmington.danny_do_better_exercises;
 /**
  * Created by dan on 6/14/17.
  */
-public class StringUtilities {
+public class
+StringUtilities {
     /**
      * @return `Hello World` as a string
      */

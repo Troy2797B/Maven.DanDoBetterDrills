@@ -41,7 +41,7 @@ public class TestSubtraction {
         short difference = 16383;
         short expectedShort = 1;
         // : When
-        short actualShort = mathUtils.subtract(baseValue, difference);
+        int actualShort = mathUtils.subtract(baseValue, difference);
         // : Then
         assertEquals(expectedShort,actualShort);
     }
@@ -52,7 +52,7 @@ public class TestSubtraction {
         byte difference = 64;
         byte expectedByte = -1;
         // : When
-        byte actualByte = mathUtils.subtract(baseValue, difference);
+       int actualByte = mathUtils.subtract(baseValue, difference);
         // : Then
         assertEquals(expectedByte,actualByte);
     }
