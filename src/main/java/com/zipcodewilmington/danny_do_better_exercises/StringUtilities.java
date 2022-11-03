@@ -38,7 +38,7 @@ StringUtilities {
      */
     public static String getPrefix(String input){
 
-        return input.substring(1,3);
+        return input.substring(0,3);
     }
 
     /**
@@ -57,7 +57,7 @@ StringUtilities {
      */
     public static Boolean compareTwoStrings(String inputValue, String comparableValue){
 
-        return null;
+        return inputValue.equals(comparableValue);
     }
 
     /**
@@ -65,12 +65,16 @@ StringUtilities {
      * @return the middle character of `inputValue`
      */
     public static Character getMiddleCharacter(String inputValue){
-       int index = inputValue.length()/2;
+       /*int index = inputValue.length()/2;
        if (index % 2 == 0){
-           System.out.println(inputValue.charAt(index));
+           return inputValue.charAt(index);
        } else if (index % 2 == 1) {
-           System.out.println(inputValue.charAt(index - 1));
-       }
+           return inputValue.charAt(index - 1);
+       }*/
+        int name = inputValue.length();
+        double word2 = name / 2.2;
+        int word3 = (int) word2;
+        return inputValue.charAt(word3);
     }
 
     /**
@@ -78,9 +82,8 @@ StringUtilities {
      * @return the first sequence of characters
      */
     public static String getFirstWord(String spaceDelimitedString){
-        StringBuilder first = new StringBuilder();
-
-        return null;
+        String[] index = spaceDelimitedString.split(" ");
+        return index[0];
     }
 
     /**
@@ -88,7 +91,8 @@ StringUtilities {
      * @return the second word of a string delimited by spaces.
      */
     public static String getSecondWord(String spaceDelimitedString){
-        return null;
+        String[] index = spaceDelimitedString.split(" ");
+        return index[1];
     }
 
     /**
@@ -96,6 +100,7 @@ StringUtilities {
      * @return an identical string with characters in reverse order.
      */
     public static String reverse(String stringToReverse){
-        return null;
+        StringBuilder newString = new StringBuilder(stringToReverse).reverse();
+        return newString.toString();
     }
 }

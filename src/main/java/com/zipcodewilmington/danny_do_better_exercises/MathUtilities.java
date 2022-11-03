@@ -28,8 +28,8 @@ public class MathUtilities {
      * @param difference value to add to starting value
      * @return sum of `baseValue` and `difference`
      */
-    public int add(short baseValue, short difference) {
-        return baseValue + difference;
+    public short add(short baseValue, short difference) {
+       return (short) (baseValue + difference);
     }
 
     /**
@@ -37,8 +37,8 @@ public class MathUtilities {
      * @param difference value to add to starting value
      * @return sum of `baseValue` and `difference`
      */
-    public int add(byte baseValue, byte difference) {
-        return baseValue + difference;
+    public byte add(byte baseValue, byte difference) {
+        return (byte) (baseValue + difference);
     }
 
     /**
@@ -83,8 +83,8 @@ public class MathUtilities {
      * @param difference value to subtract from starting value
      * @return difference between `baseValue` and `difference`
      */
-    public int subtract(short baseValue, short difference) {
-        return baseValue - difference;
+    public short subtract(short baseValue, short difference) {
+        return (short) (baseValue - difference);
     }
 
     /**
@@ -92,8 +92,8 @@ public class MathUtilities {
      * @param difference value to subtract from starting value
      * @return difference between `baseValue` and `difference`
      */
-    public int subtract(byte baseValue, byte difference) {
-        return baseValue - difference;
+    public byte subtract(byte baseValue, byte difference) {
+        return (byte) (baseValue - difference);
     }
 
     /**
@@ -140,9 +140,9 @@ public class MathUtilities {
      * @param divisor value to divide by
      * @return division of `dividend` by `divisor
      */
-    public int divide(short dividend, short divisor) {
+    public short divide(short dividend, short divisor) {
 
-        return dividend / divisor;
+        return (short) (dividend / divisor);
     }
 
     /**
@@ -150,9 +150,9 @@ public class MathUtilities {
      * @param divisor value to divide by
      * @return division of `dividend` by `divisor
      */
-    public int divide(byte dividend, byte divisor) {
+    public byte divide(byte dividend, byte divisor) {
 
-        return dividend / divisor;
+        return (byte) (dividend / divisor);
     }
 
     /**
@@ -201,16 +201,16 @@ public class MathUtilities {
      * @param multiplier value to multiply by
      * @return product of `multiplicand` by `multiplier`
      */
-    public int multiply(short multiplicand, short multiplier) {
-        return multiplicand * multiplier;
+    public short multiply(short multiplicand, short multiplier) {
+        return (short) (multiplicand * multiplier);
     }
     /**
      * @param multiplicand value to be multiplied
      * @param multiplier value to multiply by
      * @return product of `multiplicand` by `multiplier`
      */
-    public int multiply(byte multiplicand, byte multiplier) {
-        return multiplicand * multiplier;
+    public byte multiply(byte multiplicand, byte multiplier) {
+        return (byte) (multiplicand * multiplier);
     }
 
     /**
